@@ -1,0 +1,25 @@
+package kalk;
+
+public class kalkul {
+	
+	final String dodaj = "+";
+	final String odejmij = "-";
+	int result;
+	
+	
+	int oblicz (int pierwsza, int druga, String dzialanie) {
+		switch(dzialanie) {
+		case dodaj:
+			result = pierwsza + druga;
+			break;
+		case odejmij:
+			result = pierwsza - druga;
+		default: System.out.println("something wrong");
+		}
+		
+		
+		return result;
+	}
+
+
+}
