@@ -1,0 +1,32 @@
+package kalk;
+
+import java.util.Scanner;
+import kalk.kalkul;
+
+public class dzialanie {
+	public static void main(String[] args) {
+
+		
+		int a, b, result;
+		String dzialanie;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Witaj w programie!");
+		System.out.println("podaj pierwsza liczbe");
+		a = input.nextInt();
+		 
+		 System.out.println("podaj druga liczbe");
+		b = input.nextInt();
+		 
+		 System.out.println("podaj dzialanie");
+		 dzialanie = input.next();
+		
+		 
+		kalkul oblicz = new kalkul();
+		result = oblicz.oblicz(a, b, dzialanie);
+		
+		System.out.println(a + dzialanie + b + " wynik: " + result);
+		
+	}
+}
